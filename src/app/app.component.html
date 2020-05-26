@@ -1,14 +1,23 @@
-<ngx-charts-bar-horizontal-normalized
-  [view]="view"
-  [scheme]="colorScheme"
-  [results]="multi"
-  [gradient]="gradient"
-  [xAxis]="showXAxis"
-  [yAxis]="showYAxis"
-  [legend]="showLegend"
-  [showXAxisLabel]="showXAxisLabel"
-  [showYAxisLabel]="showYAxisLabel"
-  [xAxisLabel]="xAxisLabel"
-  [yAxisLabel]="yAxisLabel"
-  (select)="onSelect($event)">
-</ngx-charts-bar-horizontal-normalized>
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+    </div>
+    <div class="col-10">
+      <div #chartDiv>
+        <ngx-charts-bar-horizontal-normalized [scheme]="colorScheme" [results]="multi" [gradient]="gradient"
+        [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel"
+        (select)="onSelect($event)">
+      </ngx-charts-bar-horizontal-normalized>
+      </div>     
+    </div>
+  </div>
+</div>
+
+<div>
+  {{output1 | json }}
+</div>
+
+<div>
+  {{output2 | json }}
+</div>

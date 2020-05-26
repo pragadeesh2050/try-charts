@@ -33,37 +33,6 @@ export var multi = [
           "value": 250000000
         }
       ]
-    },
-  
-    {
-      "name": "France",
-      "series": [
-        {
-          "name": "2010",
-          "value": 50000020
-        },
-        {
-          "name": "2011",
-          "value": 58000000
-        },
-        {
-          "name": "1990",
-          "value": 58000000
-        }
-      ]
-    },
-    {
-      "name": "UK",
-      "series": [
-        {
-          "name": "2010",
-          "value": 62000000
-        },
-        {
-          "name": "1990",
-          "value": 57000000
-        }
-      ]
     }
   ];
   

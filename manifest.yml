@@ -1,0 +1,14 @@
+applications:
+- name: chart-angular-app
+  disk_quota: 256MB
+  instances: 1
+  memory: 256MB
+  path: dist/try-charts
+  buildpacks:
+  - https://github.com/cloudfoundry/nginx-buildpack.git
+  routes:
+  - route: chart-angular-app.cfapps.io
+  stack: cflinuxfs3
+nginx:
+  version: mainline
+  
